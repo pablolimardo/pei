@@ -90,6 +90,9 @@
     .hero-inner{position:relative; z-index:2; max-width:1180px; margin:0 auto; padding:120px 24px 160px; width:100%;}
     .hero-badge{display:inline-flex; align-items:center; gap:8px; background:var(--amber-100); border:1px solid rgba(217,119,6,.3); color:var(--amber-600); font-size:13px; font-weight:700; letter-spacing:.06em; text-transform:uppercase; padding:8px 16px; border-radius:999px; margin-bottom:28px;}
     .hero h1{color:var(--navy-900); font-size:clamp(34px,6vw,64px); font-weight:800; letter-spacing:-.01em; max-width:820px;}
+    .hero h1 .title-main{white-space:nowrap;}
+    .hero h1 .title-sub{display:block; margin-top:6px;}
+    @media (max-width:640px){ .hero h1{font-size:clamp(19px,6vw,34px);} }
     .hero .subtitle{color:var(--amber-600); font-size:clamp(17px,2.2vw,22px); font-weight:700; margin-top:18px; max-width:640px;}
     .hero .premise{color:var(--ink-soft); font-size:17px; margin-top:20px; max-width:600px;}
     .hero-ctas{display:flex; flex-wrap:wrap; gap:16px; margin-top:40px;}
@@ -239,7 +242,7 @@
     </div>
     <div class="hero-inner">
       <span class="hero-badge">Proyecto Educativo Institucional 2026</span>
-      <h1>Escuela Industrial N.°&nbsp;9 <span style="color:#F59E0B">"15 de Noviembre"</span></h1>
+      <h1><span class="title-main">Escuela Industrial N.° 9</span> <span class="title-sub" style="color:#F59E0B">"15 de Noviembre"</span></h1>
       <p class="subtitle">Construyendo futuro, innovación y trabajo técnico en El Calafate.</p>
       <p class="premise">Formamos técnicos comprometidos con el desarrollo sustentable de nuestra región.</p>
       <div class="hero-ctas">
