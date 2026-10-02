@@ -115,11 +115,12 @@
     .mv-card .mv-icon{width:48px; height:48px; border-radius:12px; background:var(--amber-100); color:var(--amber-600); display:flex; align-items:center; justify-content:center; margin-bottom:18px;}
     .mv-card h3{font-size:20px; color:var(--navy-900); margin-bottom:12px;}
     .mv-card p{color:var(--ink-soft); font-size:15px;}
-    .values-wrap{margin-top:56px;}
-    .values-title{font-size:13px; font-weight:700; letter-spacing:.1em; text-transform:uppercase; color:var(--ink-faint); margin-bottom:16px;}
-    .value-chips{display:flex; flex-wrap:wrap; gap:10px;}
-    .value-chip{background:var(--navy-900); color:var(--white); font-size:13.5px; font-weight:600; padding:10px 18px; border-radius:999px; display:flex; align-items:center; gap:8px;}
-    .value-chip .dot{width:6px; height:6px; border-radius:50%; background:var(--amber-500); flex-shrink:0;}
+    .values-wrap{margin-top:64px;}
+    .values-title{font-size:13px; font-weight:700; letter-spacing:.1em; text-transform:uppercase; color:var(--ink-faint); margin-bottom:24px; text-align:center;}
+    .value-chips{display:grid; grid-template-columns:repeat(4,1fr); gap:16px;}
+    .value-chip{background:var(--white); border:1px solid var(--border); border-radius:18px; padding:28px 14px; display:flex; flex-direction:column; align-items:center; text-align:center; gap:14px; font-size:15px; font-weight:700; color:var(--navy-900); box-shadow:0 1px 2px rgba(15,23,42,.04); transition:transform .2s ease, border-color .2s ease, box-shadow .2s ease;}
+    .value-chip:hover{transform:translateY(-4px); border-color:var(--amber-500); box-shadow:0 16px 28px -18px rgba(15,23,42,.22);}
+    .value-chip .dot{width:48px; height:48px; border-radius:50%; background:var(--amber-100); color:var(--amber-600); display:flex; align-items:center; justify-content:center; flex-shrink:0;}
 
     /* ---------- Especialidades ---------- */
     .spec-band{background:var(--bg); position:relative;}
@@ -195,6 +196,7 @@
       .ce-card{grid-template-columns:1fr;}
       .footer-grid{grid-template-columns:1fr; gap:32px; padding:64px 24px 32px;}
       .section{padding:72px 20px;}
+      .value-chips{grid-template-columns:repeat(2,1fr);}
     }
     @media (max-width:560px){
       .events-grid{grid-template-columns:1fr;}
@@ -285,14 +287,14 @@
     <div class="values-wrap reveal">
       <div class="values-title">Valores fundamentales</div>
       <div class="value-chips">
-        <span class="value-chip"><span class="dot"></span>Respeto</span>
-        <span class="value-chip"><span class="dot"></span>Responsabilidad</span>
-        <span class="value-chip"><span class="dot"></span>Solidaridad</span>
-        <span class="value-chip"><span class="dot"></span>Trabajo en equipo</span>
-        <span class="value-chip"><span class="dot"></span>Honestidad</span>
-        <span class="value-chip"><span class="dot"></span>Perseverancia</span>
-        <span class="value-chip"><span class="dot"></span>Cultura del cuidado y seguridad</span>
-        <span class="value-chip"><span class="dot"></span>Inclusión</span>
+        <div class="value-chip"><span class="dot"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 11l3 3L22 4"/><path d="M21 12v7a2 2 0 01-2 2H5a2 2 0 01-2-2V5a2 2 0 012-2h11"/></svg></span>Respeto</div>
+        <div class="value-chip"><span class="dot"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 11l3 3L22 4"/><path d="M21 12v7a2 2 0 01-2 2H5a2 2 0 01-2-2V5a2 2 0 012-2h11"/></svg></span>Responsabilidad</div>
+        <div class="value-chip"><span class="dot"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 11l3 3L22 4"/><path d="M21 12v7a2 2 0 01-2 2H5a2 2 0 01-2-2V5a2 2 0 012-2h11"/></svg></span>Solidaridad</div>
+        <div class="value-chip"><span class="dot"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 11l3 3L22 4"/><path d="M21 12v7a2 2 0 01-2 2H5a2 2 0 01-2-2V5a2 2 0 012-2h11"/></svg></span>Trabajo en equipo</div>
+        <div class="value-chip"><span class="dot"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 11l3 3L22 4"/><path d="M21 12v7a2 2 0 01-2 2H5a2 2 0 01-2-2V5a2 2 0 012-2h11"/></svg></span>Honestidad</div>
+        <div class="value-chip"><span class="dot"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 11l3 3L22 4"/><path d="M21 12v7a2 2 0 01-2 2H5a2 2 0 01-2-2V5a2 2 0 012-2h11"/></svg></span>Perseverancia</div>
+        <div class="value-chip"><span class="dot"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 11l3 3L22 4"/><path d="M21 12v7a2 2 0 01-2 2H5a2 2 0 01-2-2V5a2 2 0 012-2h11"/></svg></span>Cultura del cuidado y seguridad</div>
+        <div class="value-chip"><span class="dot"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 11l3 3L22 4"/><path d="M21 12v7a2 2 0 01-2 2H5a2 2 0 01-2-2V5a2 2 0 012-2h11"/></svg></span>Inclusión</div>
       </div>
     </div>
   </section>
