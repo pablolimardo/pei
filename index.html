@@ -110,18 +110,18 @@
     .photo-slot.light .ph-label{color:var(--ink-soft); background:rgba(255,255,255,.75);}
 
     /* ---------- Historia / Mision-Vision ---------- */
-    .historia-grid{display:grid; grid-template-columns:1.1fr .9fr; gap:56px; align-items:center;}
+    .historia-grid{display:grid; grid-template-columns:minmax(0,1.1fr) minmax(0,.9fr); gap:56px; align-items:center;}
     .stat-row{display:flex; gap:36px; margin-top:32px;}
     .stat-row .num{font-family:'Outfit',sans-serif; font-weight:800; font-size:38px; color:var(--navy-900);}
     .stat-row .lbl{font-size:13px; color:var(--ink-soft); font-weight:600; margin-top:2px;}
-    .mv-grid{display:grid; grid-template-columns:1fr 1fr; gap:24px; margin-top:56px;}
+    .mv-grid{display:grid; grid-template-columns:minmax(0,1fr) minmax(0,1fr); gap:24px; margin-top:56px;}
     .mv-card{background:var(--white); border:1px solid var(--border); border-radius:18px; padding:32px; box-shadow:0 1px 2px rgba(15,23,42,.04);}
     .mv-card .mv-icon{width:48px; height:48px; border-radius:12px; background:var(--amber-100); color:var(--amber-600); display:flex; align-items:center; justify-content:center; margin-bottom:18px;}
     .mv-card h3{font-size:20px; color:var(--navy-900); margin-bottom:12px;}
     .mv-card p{color:var(--ink-soft); font-size:15px;}
     .values-wrap{margin-top:64px;}
     .values-title{font-size:13px; font-weight:700; letter-spacing:.1em; text-transform:uppercase; color:var(--ink-faint); margin-bottom:24px; text-align:center;}
-    .value-chips{display:grid; grid-template-columns:repeat(4,1fr); gap:16px;}
+    .value-chips{display:grid; grid-template-columns:repeat(4,minmax(0,1fr)); gap:16px;}
     .value-chip{background:var(--white); border:1px solid var(--border); border-radius:18px; padding:28px 14px; display:flex; flex-direction:column; align-items:center; text-align:center; gap:14px; font-size:15px; font-weight:700; color:var(--navy-900); box-shadow:0 1px 2px rgba(15,23,42,.04); transition:transform .2s ease, border-color .2s ease, box-shadow .2s ease;}
     .value-chip:hover{transform:translateY(-4px); border-color:var(--amber-500); box-shadow:0 16px 28px -18px rgba(15,23,42,.22);}
     .value-chip .dot{width:48px; height:48px; border-radius:50%; background:var(--amber-100); color:var(--amber-600); display:flex; align-items:center; justify-content:center; flex-shrink:0;}
@@ -131,7 +131,7 @@
     .spec-band .section-head .eyebrow{color:var(--amber-600);}
     .spec-band .section-head h2{color:var(--navy-900);}
     .spec-band .section-head p{color:var(--ink-soft);}
-    .spec-grid{display:grid; grid-template-columns:1fr 1fr; gap:28px;}
+    .spec-grid{display:grid; grid-template-columns:minmax(0,1fr) minmax(0,1fr); gap:28px;}
     .spec-card{background:var(--white); border:1px solid var(--border); border-radius:20px; padding:36px; display:flex; flex-direction:column; gap:20px; transition:transform .2s ease, border-color .2s ease, box-shadow .2s ease; box-shadow:0 1px 2px rgba(15,23,42,.04);}
     .spec-card:hover{transform:translateY(-4px); border-color:var(--amber-500); box-shadow:0 20px 36px -20px rgba(15,23,42,.18);}
     .spec-icon{width:56px; height:56px; border-radius:14px; background:var(--amber-100); color:var(--amber-600); display:flex; align-items:center; justify-content:center;}
@@ -141,7 +141,7 @@
     .spec-block p{color:var(--ink-soft); font-size:14.5px;}
 
     /* ---------- Modelo pedagogico ---------- */
-    .model-grid{display:grid; grid-template-columns:1fr 1fr; gap:56px; align-items:start;}
+    .model-grid{display:grid; grid-template-columns:minmax(0,1fr) minmax(0,1fr); gap:56px; align-items:start;}
     .model-item{display:flex; gap:18px; margin-bottom:32px;}
     .model-item .mi-icon{width:44px; height:44px; border-radius:12px; background:var(--amber-100); color:var(--amber-600); display:flex; align-items:center; justify-content:center; flex-shrink:0;}
     .model-item h4{font-size:17px; color:var(--navy-900); margin-bottom:6px;}
@@ -164,11 +164,11 @@
     .contraturno-note p{font-size:13.5px; color:#7c4a05;}
 
     /* ---------- Vida escolar ---------- */
-    .events-grid{display:grid; grid-template-columns:repeat(3,1fr); gap:18px; margin-top:12px;}
+    .events-grid{display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:18px; margin-top:12px;}
     .event-card{background:var(--white); border:1px solid var(--border); border-radius:16px; padding:22px; text-align:left; display:flex; flex-direction:column; gap:12px;}
     .event-card .ev-icon{width:40px; height:40px; border-radius:10px; background:var(--bg); color:var(--navy-800); display:flex; align-items:center; justify-content:center;}
     .event-card h4{font-size:15.5px; color:var(--navy-900);}
-    .ce-card{margin-top:40px; background:var(--white); border:1px solid var(--border); border-left:5px solid var(--amber-500); border-radius:22px; padding:44px; display:grid; grid-template-columns:1fr 1fr; gap:32px; align-items:center;}
+    .ce-card{margin-top:40px; background:var(--white); border:1px solid var(--border); border-left:5px solid var(--amber-500); border-radius:22px; padding:44px; display:grid; grid-template-columns:minmax(0,1fr) minmax(0,1fr); gap:32px; align-items:center;}
     .ce-card h3{color:var(--navy-900); font-size:24px;}
     .ce-card p{color:var(--ink-soft); font-size:15px; margin-top:12px;}
 
@@ -182,7 +182,7 @@
 
     /* ---------- Contacto / Footer ---------- */
     .footer{background:var(--navy-900); color:rgba(255,255,255,.7);}
-    .footer-grid{display:grid; grid-template-columns:1.3fr 1fr 1fr; gap:48px; padding:64px 24px 32px; max-width:1180px; margin:0 auto;}
+    .footer-grid{display:grid; grid-template-columns:minmax(0,1.3fr) minmax(0,1fr) minmax(0,1fr); gap:48px; padding:64px 24px 32px; max-width:1180px; margin:0 auto;}
     .footer h3{color:var(--white); font-size:15px; margin-bottom:18px; letter-spacing:.04em; text-transform:uppercase;}
     .footer-brand p{color:rgba(255,255,255,.6); font-size:14.5px; margin-top:16px; max-width:320px;}
     .contact-line{display:flex; gap:12px; align-items:flex-start; margin-bottom:16px; font-size:14.5px;}
@@ -193,17 +193,17 @@
     .footer-bottom{border-top:1px solid rgba(255,255,255,.1); padding:20px 24px; text-align:center; font-size:13px; color:rgba(255,255,255,.45);}
 
     @media (max-width:900px){
-      .historia-grid, .model-grid{grid-template-columns:1fr; gap:40px;}
-      .mv-grid{grid-template-columns:1fr;}
-      .spec-grid{grid-template-columns:1fr;}
-      .events-grid{grid-template-columns:1fr 1fr;}
-      .ce-card{grid-template-columns:1fr;}
-      .footer-grid{grid-template-columns:1fr; gap:32px; padding:64px 24px 32px;}
+      .historia-grid, .model-grid{grid-template-columns:minmax(0,1fr); gap:40px;}
+      .mv-grid{grid-template-columns:minmax(0,1fr);}
+      .spec-grid{grid-template-columns:minmax(0,1fr);}
+      .events-grid{grid-template-columns:minmax(0,1fr) minmax(0,1fr);}
+      .ce-card{grid-template-columns:minmax(0,1fr);}
+      .footer-grid{grid-template-columns:minmax(0,1fr); gap:32px; padding:64px 24px 32px;}
       .section{padding:72px 20px;}
-      .value-chips{grid-template-columns:repeat(2,1fr);}
+      .value-chips{grid-template-columns:repeat(2,minmax(0,1fr));}
     }
     @media (max-width:560px){
-      .events-grid{grid-template-columns:1fr;}
+      .events-grid{grid-template-columns:minmax(0,1fr);}
       .hero-inner{padding:100px 20px 140px;}
     }
 </style>
